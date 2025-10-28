@@ -1,0 +1,38 @@
+
+
+in vscode terminal 
+  docker build -t <image name> .
+  docker images
+  docker run 
+
+
+
+B1:
+.git -> vscode ->html file -> Dockerfile create -> 
+FROM httpd:latest
+COPY index.html /usr/local/apache2/htdocs
+docker build -t <name> .
+docker run -d --name <name> -p 8000:80 <name of image>:latest
+B2:
+After the above:
+docker tag <name_image> <username>/<docker_repo_name>:latest
+docker push <username>/<docker_repo_name>:latest
+docker pull <username>/<docker_repo_name>:latest
+
+
+
+advantages of devops:
+principles of devops:
+
+
+A1:
+git init
+git config --global user.name ""
+git config --global user.email ""
+git config --global --list
+git status
+git log
+git push --set--upstream 
+git reset --soft HEAD~1(gets back to the previous commit)
+git reflog
+git reset --soft <id>
